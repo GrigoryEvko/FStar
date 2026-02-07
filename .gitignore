@@ -8,6 +8,7 @@
 /_pak*
 /_srcpak*
 _build
+_opam
 # ^ build output
 /nightly
 /bin/fstar.exe
