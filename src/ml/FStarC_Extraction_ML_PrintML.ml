@@ -7,6 +7,7 @@ open Pprintast
 open Ast_helper
 open Ast
 open Ppxlib.Ast_builder.Default
+module Longident = Ppxlib.Longident
 open Longident
 
 open FStarC_Extraction_ML_Syntax
