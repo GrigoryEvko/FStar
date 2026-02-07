@@ -1,0 +1,3 @@
+OPAM_SWITCH_PREFIX	=	/home/grigory/iprit/FStar/_opam	:	target	Prefix\ of\ the\ current\ opam\ switch
+MANPATH	=:	/home/grigory/iprit/FStar/_opam/man	:	host	Current\ opam\ switch\ man\ dir
+PATH	=+=	/home/grigory/iprit/FStar/_opam/bin	:	target	Binary\ dir\ for\ opam\ switch\ /home/grigory/iprit/FStar

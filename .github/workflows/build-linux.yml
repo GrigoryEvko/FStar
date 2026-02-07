@@ -21,7 +21,7 @@ jobs:
 
       - uses: ocaml/setup-ocaml@v3
         with:
-          ocaml-compiler: 4.14.2
+          ocaml-compiler: 5.4.0
 
       - name: Prepare
         run: |
@@ -73,7 +73,7 @@ jobs:
     steps:
       - uses: cda-tum/setup-z3@main
         with:
-          version: 4.15.3
+          version: 4.15.4
 
       - name: Get fstar package
         uses: actions/download-artifact@v4

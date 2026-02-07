@@ -5,7 +5,7 @@ authors: "Nik Swamy <nswamy@microsoft.com>,Jonathan Protzenko <protz@microsoft.c
 homepage: "http://fstar-lang.org"
 license: "Apache-2.0"
 depends: [
-  "ocaml" {>= "4.14.0"}
+  "ocaml" {>= "5.6.0"}
   "batteries"
   "zarith" {>= "1.14"}
   "stdint"
@@ -40,3 +40,7 @@ https://github.com/FStarLang/FStar/blob/master/INSTALL.md#runtime-dependency-par
 dev-repo: "git+https://github.com/FStarLang/FStar"
 bug-reports: "https://github.com/FStarLang/FStar/issues"
 synopsis: "Verification system for effectful programs"
+name: "fstar"
+url {
+  src: "git+file:///home/grigory/iprit/FStar#master"
+}

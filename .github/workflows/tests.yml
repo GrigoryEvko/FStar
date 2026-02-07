@@ -116,7 +116,7 @@ jobs:
     steps:
       - uses: cda-tum/setup-z3@main
         with:
-          version: 4.15.3
+          version: 4.15.4
 
       - name: Get fstar package
         uses: actions/download-artifact@v4
@@ -146,7 +146,7 @@ jobs:
       # TODO: Install all versions?
       - uses: cda-tum/setup-z3@main
         with:
-          version: 4.15.3
+          version: 4.15.4
 
       - name: Get fstar package
         uses: actions/download-artifact@v4
@@ -157,7 +157,7 @@ jobs:
       - name: Set-up OCaml
         uses: ocaml/setup-ocaml@v3
         with:
-          ocaml-compiler: 4.14.2
+          ocaml-compiler: 5.4.0
 
       - run: opam install . --deps-only --with-test
         working-directory: fstar
@@ -180,7 +180,7 @@ jobs:
 
       - uses: cda-tum/setup-z3@main
         with:
-          version: 4.15.3
+          version: 4.15.4
 
       - name: Get fstar package
         uses: actions/download-artifact@v4

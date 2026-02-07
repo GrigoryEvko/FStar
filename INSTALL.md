@@ -32,7 +32,7 @@ using the [online F\* editor] that's part of the [F\* tutorial].
 
 F\* requires specific versions of Z3 to work correctly,
 and will refuse to run if the version string does not match.
-You should have `z3-4.8.5` and `z3-4.13.3` in your `$PATH`:
+You should have `z3-4.8.5`, `z3-4.13.3`, and `z3-4.15.4` in your `$PATH`:
 
 ```
 ❯ z3-4.8.5 --version
@@ -40,6 +40,9 @@ Z3 version 4.8.5 - 64 bit
 
 ❯ z3-4.13.3 --version
 Z3 version 4.13.3 - 64 bit
+
+❯ z3-4.15.4 --version
+Z3 version 4.15.4 - 64 bit
 ```
 
 On Linux you can install these two versions with the following command:
@@ -94,14 +97,14 @@ need to perform the following step before your first use:
         $ fstar.exe --version
         F* 0.9.8.0~dev
         platform=Linux_x86_64
-        compiler=OCaml 4.14.0
+        compiler=OCaml 5.4.0
         date=yyyy-mm-ddThh:nn:ss+02:00
         commit=xxxxxxxx
         $ z3-4.13.3 --version
         Z3 version 4.13.3 - 64 bit
 
    Note: if you are using the binary package and extracted it to, say, the
-   `/path/to/fstar` directory, then both `fstar.exe` and the right version of
+   `/path/to/fstar` directory, then both `fstar.exe` and the right versions of
    `z3` are in the `path/to/fstar/bin` directory.
 
 ### Testing a binary package ###
@@ -212,7 +215,7 @@ First we explain how to get a working OCaml setup on your machine.
 
 ### Prerequisites: Working OCaml setup  ###
 
-The steps require a working OCaml setup. OCaml version 4.14.X should work.
+The steps require a working OCaml setup. OCaml version 5.4.X should work.
 
 #### Instructions for Windows ####
 
@@ -223,7 +226,7 @@ The steps require a working OCaml setup. OCaml version 4.14.X should work.
   ```sh
   $ opam update
   $ opam switch list-available
-  $ opam switch create ocaml-variants.4.14.0+mingw64c
+  $ opam switch create ocaml-variants.5.4.0+mingw64c
   ```
 
 3. Afterwards you can install the `depext` and `depext-cygwinports` packages,

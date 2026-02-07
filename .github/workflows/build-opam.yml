@@ -17,8 +17,8 @@ jobs:
       fail-fast: false
       matrix:
         ocamlv:
-          - 4.14.2
           - 5.3
+          - 5.4.0
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
